@@ -1,0 +1,20 @@
+<div>
+	<h3>Compound interest</h3>
+	<div class="row">
+		<div class="form-group col-lg-4" ng-controller="compoundInterestCalculator" id = "getValue">
+			<form>
+    			<label for="principal">Principal:</label>
+				<input type="text" class="form-control" id="principal" ng-model="principal"/>
+				<label for="rate">Rate of interest:</label>
+				<input type="text" class="form-control" id="rate" ng-model="rate" />
+				<label for="time">Time period(years):</label>
+				<input type="text" class="form-control" id="time" ng-model="time" />
+				<label for="time">Number of compounding:</label>
+				<input type="text" class="form-control" id="nrOfCompounding" ng-model="nrOfCompounding" />
+			</form>
+			<button type="button" class="btn btn-primary btnCalc" onclick="calculate2()">Calculate</button> 
+			<p class="text-result">Total Amount: <strong>{{grandTotal}}</strong></p>
+			<p class="text-result">Total Interest: <strong>{{interestOnly}}</strong></p>
+		</div>
+	</div>
+</div>
